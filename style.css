@@ -1,0 +1,414 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lalezar, sans-serif;
+    background-color: #ffffff;
+    background-image: url('imagem/img-fundo.jpg'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área visível */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.faca-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro da seção de login */
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo semitransparente */
+    backdrop-filter: blur(10px); /* Desfoque */
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.faca-login p {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.faca-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.forgot-password {
+    margin-top: -10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 12px;
+    align-self: flex-start;
+    width: 100%;
+    text-align: left;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.entrar-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.entrar-button:hover {
+    background-color: #969696;
+    color: #ffffff;
+}
+
+.separator {
+    border-top: 1px solid #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.register-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*   FIM DA ESTILIZAÇÃO DA PÁGINA DE LOGIN
+
+
+     COMEÇO DA ESTILIZAÇÃO DA PÁGINA DE CADASTRO */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lalezar, sans-serif;
+    background-color: #ffffff;
+    background-image: url('imagem/img-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.cadastro-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-usuario p {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.cadastro-usuario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.cadastrar-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.cadastrar-button:hover {
+    background-color: #218838;
+}
+
+.separator {
+    border-top: 1px solid #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*   FIM DA ESTILIZAÇÃO DA PÁGINA DE CADASTRO
+
+
+     COMEÇO DA ESTILIZAÇÃO DA PÁGINA DE REDEFINIR SENHA */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lalezar, sans-serif;
+    background-color: #ffffff;
+    background-image: url('imagem/img-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.redefinir-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.redefinir-senha p {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+.redefinir-senha form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+}
+
+.input-group input {
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.redefinir-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #ff9900;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.redefinir-button:hover {
+    background-color: #cc7a00;
+}
+
+.separator {
+    border-top: 1px solid #000;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
